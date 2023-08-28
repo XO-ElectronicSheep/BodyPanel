@@ -2,7 +2,7 @@
     <div class="login-back">
         <div class="login">
             <h2 class="biaoti">
-                Body 面板
+                Body Panel
             </h2>
             <el-form :label-position="labelPosition" :model="formLabelAlign" style="max-width: 560px">
                 <el-form-item>

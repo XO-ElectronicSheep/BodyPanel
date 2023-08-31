@@ -84,7 +84,12 @@ const submitForm = async () => {
     localStorage.setItem('token', data.token);
 
     router.push({
+        path: '/forward',
+        query: {
+            username: formLabelAlign.email,
+            token: localStorage.getItem('token')
 
+        }
     })
 }
 </script>

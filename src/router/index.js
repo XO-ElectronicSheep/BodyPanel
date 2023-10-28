@@ -1,7 +1,10 @@
 //专用于创建整个应用的路由器
 import { createRouter, createWebHistory } from 'vue-router';
-import loga from './loga.js'
+import Forward from '../views/my_forward/Forward.vue'
+import Texts from '../components/Texts.vue'
+import Users from '../components/Users.vue'
 import Login from '../views/login/Login.vue'
+
 //创建并暴露一个路由器
 const router = createRouter({
     history: createWebHistory(),
@@ -14,7 +17,21 @@ const router = createRouter({
             path: '/login',
             component: Login
         },
-        ...loga
+        {
+            path: '/forward',
+            component: Forward,
+            children: [  //使用嵌套路由
+                {
+                    path: '',
+                    component: Texts
+                },
+                {
+                    path: 'users',
+                    component: Users
+                },
+            ]
+
+        }
     ]
 })
 

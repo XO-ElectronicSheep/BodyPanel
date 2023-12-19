@@ -51,10 +51,6 @@ import { onMounted, reactive, ref } from 'vue'
 const dialogVisible = ref(false)
 
 const dialogFormVisible = reactive(false)
-const judgementForm = () => {
-    dialogFormVisible = true
-
-}
 
 
 const acc = reactive({

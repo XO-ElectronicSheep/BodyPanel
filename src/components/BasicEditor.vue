@@ -80,8 +80,8 @@ export default {
             editor.insertText('xxx');
 
             // 返回值（注意，vue 事件的返回值，不能用 return）
-            callback(false); // 返回 false ，阻止默认粘贴行为
-            // callback(true) // 返回 true ，继续默认的粘贴行为
+            //callback(false); // 返回 false ，阻止默认粘贴行为
+            callback(true) // 返回 true ，继续默认的粘贴行为
         };
 
         /*   const insertText = () => {

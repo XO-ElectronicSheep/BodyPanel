@@ -2,7 +2,7 @@
 import axios from "axios"; // API封装  对axios进行封装
 // 创建一个axioas实例 instance
 const instance = axios.create({
-    baseURL: "http://101.42.229.147:3002",
+    baseURL: "http://124.220.23.104:3002",
     timeout: 5000,
 });
 //添加请求拦截器，会在发起请求之前执行相应的需求

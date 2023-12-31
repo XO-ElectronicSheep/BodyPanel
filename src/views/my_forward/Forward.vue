@@ -16,6 +16,13 @@
                         </el-icon>
                         <template #title>转换用户查看</template>
                     </el-menu-item>
+
+                    <el-menu-item index="3" @click="submitForm(3)">
+                        <el-icon>
+                            <Switch />
+                        </el-icon>
+                        <template #title>AI文章优化</template>
+                    </el-menu-item>
                 </el-menu>
             </el-aside>
             <el-main>
@@ -60,9 +67,13 @@ const submitForm = (name) => {
         router.push({
             path: '/forward',
         })
-    } else {
+    } else if (name == 2) {
         router.push({
             path: '/forward/users',
+        })
+    } else if (name == 3) {
+        router.push({
+            path: '/forward/ai',
         })
     }
 

@@ -62,3 +62,8 @@ export function isUsers(params) {
 export function updateReturnVisitInformation(params) {
     return axios.post('/api/updateReturnVisitInformation', params);
 }
+
+/* 文章AI转换 */
+export function GetAi(params) {
+    return axios.post('/process-text', params);
+}

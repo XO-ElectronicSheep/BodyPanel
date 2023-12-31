@@ -77,7 +77,7 @@ export default {
             console.log('ClipboardEvent 粘贴事件对象', event);
 
             // 自定义插入内容
-            editor.insertText('xxx');
+            editor.insertText('');
 
             // 返回值（注意，vue 事件的返回值，不能用 return）
             //callback(false); // 返回 false ，阻止默认粘贴行为

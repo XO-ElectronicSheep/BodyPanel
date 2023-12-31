@@ -4,7 +4,7 @@ import Forward from '../views/my_forward/Forward.vue'
 import Texts from '../components/Texts.vue'
 import Users from '../components/Users.vue'
 import Login from '../views/login/Login.vue'
-
+import Aidd from '../components/Aidd.vue'
 //创建并暴露一个路由器
 const router = createRouter({
     history: createWebHashHistory(),
@@ -29,9 +29,12 @@ const router = createRouter({
                     path: 'users',
                     component: Users
                 },
+                {
+                    path: 'ai',
+                    component: Aidd
+                }
             ]
         }
     ]
 })
-
 export default router;

@@ -22,9 +22,6 @@
             </template>
         </el-table-column>
     </el-table>
-
-
-
     <el-dialog v-model="dialogVisible" title="回访信息保留填写" width="30%" :before-close="handleClose">
         <el-input v-model="acc.textarea" autocomplete="off" />
         <template #footer>
